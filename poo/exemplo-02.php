@@ -15,7 +15,7 @@ class Carro{
 		$this->modelo = $value;
 	}
 
-	public function getMotor(){
+	public function getMotor():float{
 		return $this->motor;
 	}
 
@@ -23,7 +23,7 @@ class Carro{
 		$this->motor = $value;
 	}
 
-	public function getAno(){
+	public function getAno():int{
 		return $this->ano;
 	}
 
@@ -31,7 +31,7 @@ class Carro{
 		$this->ano = $value;
 	}
 
-	public exibir(){
+	public function exibir(){
 
 		return array(
 			'modelo' =>  $this->getModelo(),
@@ -43,7 +43,11 @@ class Carro{
 
 $carro = new Carro();
 $carro->setModelo("Gol GT");
-//echo $carro->getModelo();
+$carro->setMotor("1.6");
+$carro->setAno("2022");
+
+//print_r($carro->exibir());
+var_dump($carro->exibir());//mostra tbm o tipo de dado
 
 
  ?>
