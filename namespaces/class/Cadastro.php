@@ -32,14 +32,14 @@ class Cadastro
 		$this->senha = $value;
 	}
 
-	public function __toString()
+	/*public function __toString()
 	{
 		json_encode(array(
 			"nome" => $this->getNome(),
 			"email" => $this->getEmail(),
 			"senha" => $this->getSenha()
 		));
-	}
+	}*/
 }
 
 
