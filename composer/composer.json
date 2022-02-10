@@ -1,0 +1,20 @@
+{
+    "name": "gsccoelho/composer",
+    "description": "aula de php 7",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Gsccoelho\\Composer\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Guilherme Windows",
+            "email": "gsccoelho@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "monolog/monolog":"1.0.*"
+    }
+}
